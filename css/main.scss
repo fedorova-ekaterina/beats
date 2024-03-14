@@ -1,0 +1,51 @@
+$baseFontSize: 16px;
+$containerWidth: 940px;
+//colors
+$main-black: #292929;
+$black: #000;
+$black-2: #151515;
+$black-backgr:#181818;
+$grey: #f5f5f5;
+$light-grey: #666666;
+$grey1: #999999;
+$dark-grey: #9a9a9a;
+$grey-medium: #f8faf9;
+$red: #e01f3d;
+$white: #fff;
+
+%title {
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+}
+
+@import './normalize.css';
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+
+//components
+@import './blocks/layout';
+@import './blocks/hero';
+@import './blocks/page-header';
+@import './blocks/menu';
+@import './blocks/btn';
+@import './blocks/features';
+@import './blocks/about-beats';
+@import './blocks/feature';
+@import './blocks/good-card';
+@import './blocks/team';
+@import './blocks/team-member';
+@import './blocks/colors';
+@import './blocks/reviews';
+@import './blocks/switcher';
+@import './blocks/video-block';
+@import './blocks/delivery';
+@import './blocks/form';
+@import './blocks/controls';
+@import './blocks/map';
+@import './blocks/page-footer';
+@import './blocks/share';
+@import './blocks/tel';
+@import './blocks/fixed-menu';

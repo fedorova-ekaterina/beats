@@ -1,0 +1,30 @@
+.share {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 175px;
+}
+
+.share__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+
+    &--tg {
+        background-image: url("../img/t.png");
+    }
+
+    &--vk { 
+        background-image: url("../img/vk.png");
+    }
+
+    &--fb {
+        background-image: url("../img/f.png");
+    }
+    
+    &--inst {
+        background-image: url("../img/in.png");
+
+    }
+}

@@ -1,0 +1,52 @@
+.team-member__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 4px;
+}
+
+.team-member__pic-block {
+    margin-bottom: 25px;
+}
+
+.team-member__desc {
+    color: $light-grey;
+}
+
+.team-member__operat {
+    padding: 0 39px;
+}
+
+.team-member__block {
+    display: none;
+}
+
+.team-member__open-btn {
+    padding: 0;
+    background: none;
+    border: 8px solid transparent;
+    width: 0px;
+    height: 0px;
+    border-top-color: $red;
+    border-bottom-width: 0;
+    border-right-width: 4px;
+    border-left-width: 4px;
+
+    &--opened {
+        padding: 0;
+        background: none;
+        border: 8px solid transparent;
+        width: 0px;
+        height: 0px;
+        border-bottom-color: $red;
+        border-top-width: 0;
+        border-right-width: 4px;
+        border-left-width: 4px;
+    }
+}
+
+.team-member__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

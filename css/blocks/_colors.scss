@@ -1,0 +1,52 @@
+.colors {
+    background-image: url('../img/colors.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20%;
+    min-height: 652px;
+    color: $white;
+
+    &__title {
+        @extend %title;
+    }
+
+    &__container {
+        padding-top: 115px;
+    }
+
+    &__list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        min-width: 652px;
+        top: 24.3%;
+        right: -8.27%;
+        transform: rotate(270deg);
+        font-size: 36px;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-weight: 700;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__item {
+        display: flex;
+        padding: 30px 35px;
+        width: 100%;
+        height: auto;
+
+        &--red {
+            background-color: $red;
+        }
+
+        &--black {
+            background-color: $black;
+        }
+
+        &--silver {
+            background-color: $grey1;
+        }
+    }
+}

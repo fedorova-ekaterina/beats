@@ -1,0 +1,47 @@
+.about-beats__title {
+    @extend %title;
+}
+
+.about-beats__container {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.about-beats__block {
+    width: 590px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.about-beats__desc {
+    color: $light-grey;
+}
+
+.about-beats__features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-beats__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 276px;
+}
+
+.about-beats__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: $grey;
+}
+
+.feature__img {
+    width: 68px;
+    height: 68px;
+}

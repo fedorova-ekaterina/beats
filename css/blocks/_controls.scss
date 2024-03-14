@@ -1,0 +1,51 @@
+.controls {
+    &__label {
+        display: flex;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    &__elem {
+        display: none;
+
+        &:checked ~ .controls__visible {
+            &::before {
+                display: block;
+            }
+        }
+    }
+
+    &--radio {
+        margin-bottom: 18px;
+    }
+
+    &__visible {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: $white;
+
+        &::before {
+            content: "";
+            display: none;
+            width: 13px;
+            height: 13px;
+            background-color: $red;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--checkbox {
+            border-radius: 0;
+
+            &:before {
+                background: url('../img/checkmark.png') no-repeat center;
+            }
+        }
+    }
+}

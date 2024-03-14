@@ -1,0 +1,26 @@
+.team__container {
+    padding-top: 75px;
+}
+
+.team__title {
+    @extend %title;
+    text-align: center;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__card {
+    width: 220px;
+    min-height: 455px;
+    text-align: center;
+
+    &:hover,
+    &--active {
+        .team__member-block {
+            display: block;
+        }
+    }
+}

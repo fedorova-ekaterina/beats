@@ -58,3 +58,11 @@ body {
     width: $containerWidth;
     margin: 0 auto;
 }
+
+.section {
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

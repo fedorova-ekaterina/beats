@@ -27,7 +27,7 @@
 .good-card__container {
     display: flex;
     gap: 60px;
-    padding-top: 65px;
+    padding-top: 100px;
     padding-bottom: 120px;
 }
 
@@ -47,6 +47,10 @@
 
 .good-card__parameter {
     padding-right: 10%;
+
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 .good-card__num {

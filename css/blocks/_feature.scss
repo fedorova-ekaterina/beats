@@ -8,3 +8,20 @@
     padding: 0 15px;
     color: $light-grey;
 }
+
+.feature__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: $grey;
+}
+
+.feature__img {
+    width: 68px;
+    height: 68px;
+}

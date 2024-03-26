@@ -5,17 +5,26 @@
     color: $white;
     
     &__container {
-        padding-top: 65px;
+        padding-top: 4.0625rem;
     }
     
     &__title {
         @extend %title;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 3.75rem;
     }
 
     &__form {
         display: flex;
-        gap: 20px;
+        gap: 1.25rem;
+
+        @include tablets {
+            flex-direction: column;
+            padding: 0 19%;
+        }
+
+        @include mobiles {
+            padding: 0;
+        } 
     }
 }

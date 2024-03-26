@@ -1,12 +1,28 @@
+.feature {
+    @include mobiles {
+        flex-direction: row;
+        gap: 2%;
+        margin-bottom: 10%;
+    }
+}
 .feature__title {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .feature__text {
     text-align: center;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
     color: $light-grey;
+
+    @include tablets {
+        padding: 0;
+    }
+
+    @include mobiles {
+        width: 19.2857rem;
+        text-align: left;
+    }
 }
 
 .feature__img-block {
@@ -14,14 +30,14 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 20px;
-    width: 130px;
-    height: 130px;
+    margin-bottom: 1.25rem;
+    width: 8.125rem;
+    height: 8.125rem;
     border-radius: 50%;
     background-color: $grey;
 }
 
 .feature__img {
-    width: 68px;
-    height: 68px;
+    width: 4.25rem;
+    height: 4.25rem;
 }

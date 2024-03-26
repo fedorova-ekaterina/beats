@@ -1,5 +1,10 @@
 $baseFontSize: 16px;
 $containerWidth: 940px;
+
+//breakpoints
+$tablets: 768px;
+$mobiles: 480px;
+
 //colors
 $main-black: #292929;
 $black: #000;
@@ -14,8 +19,8 @@ $red: #e01f3d;
 $white: #fff;
 
 %title {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     text-transform: uppercase;
 }
 
@@ -26,6 +31,7 @@ $white: #fff;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
 
 //components
+@import './media';
 @import './blocks/layout';
 @import './blocks/hero';
 @import './blocks/page-header';
@@ -49,3 +55,4 @@ $white: #fff;
 @import './blocks/share';
 @import './blocks/tel';
 @import './blocks/fixed-menu';
+@import './blocks/hamburger';

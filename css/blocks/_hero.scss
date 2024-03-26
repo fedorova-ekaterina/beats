@@ -2,11 +2,29 @@
     background-color: $grey;
     background-image: url('../img/beats.png');
     background-repeat: no-repeat;
-    background-position: left 67% center;
+    background-position: left 75% center;
+
+    @include tablets {
+        background-image: none;
+        position: relative;
+
+        &:before {
+            content: url('../img/beats-tablets.png');
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%);
+            display: block;
+        }
+    }
 }
 
 .hero__main-title {
     @extend %title;
+
+    @include tablets {
+        padding: 0 8%;
+    }
 }
 
 .hero__container {
@@ -14,24 +32,47 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 1.25rem;
+    padding-bottom: 3.75rem;
+    
 }
 
 .hero__promo {
     width: 46%;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .hero__text {
     padding-right: 23%;
-    margin-bottom: 45px;
-    font-size: 21px;
-    line-height: 25px;
+    margin-bottom: 2.8125rem;
+    font-size: 1.3125rem;
+    line-height: 1.5625rem;
     font-family: 'Alegreya Sans', sans-serif;
+
+    @include tablets {
+        text-align: center;
+        padding: 0 25%;
+    }
+
+    @include mobiles {
+        padding: 0 18%;
+    }
 }
 
 .hero__features {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
+
+    @include tablets {
+        display: none;
+    }
 }

@@ -1,12 +1,12 @@
 .team-member__name {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
     margin-right: 4px;
 }
 
 .team-member__pic-block {
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .team-member__desc {
@@ -14,7 +14,7 @@
 }
 
 .team-member__operat {
-    padding: 0 39px;
+    padding: 0 2.4375rem;
 }
 
 .team-member__block {
@@ -25,8 +25,8 @@
     padding: 0;
     background: none;
     border: 8px solid transparent;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-top-color: $red;
     border-bottom-width: 0;
     border-right-width: 4px;
@@ -36,8 +36,8 @@
         padding: 0;
         background: none;
         border: 8px solid transparent;
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
         border-bottom-color: $red;
         border-top-width: 0;
         border-right-width: 4px;

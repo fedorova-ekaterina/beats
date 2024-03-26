@@ -1,7 +1,16 @@
-html,
-body {
+html {
     height: 100%;
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include mobiles {
+        font-size: $baseFontSize - 2px;
+    }
 }
+
 * {
     box-sizing: border-box;
 }
@@ -37,7 +46,7 @@ p {
 }
 
 body {
-    font-size: $baseFontSize;
+    height: 100%;
     font-family: 'Play', Arial, sans-serif;
     color: $main-black;
     line-height: 1.42;
@@ -49,19 +58,19 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
 }
 
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: 40.625rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

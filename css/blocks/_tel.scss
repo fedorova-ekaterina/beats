@@ -1,5 +1,71 @@
 .tel {
     display: flex;
-    gap: 5px;
+    gap: 0.3125rem;
     align-items: center;
+    position: relative;
+
+    @include tablets {
+        
+        &--footer {
+            padding-left: 8%;
+            
+            &::before {
+                content: url("../img/phone-red.png");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    @include mobiles {
+        justify-content: center;
+        padding: 0;
+    }
+
+
+    @include mobiles {
+        &::before {
+            display: none;
+        }
+    }
+
+
+    &__icon {
+        flex-shrink: 0;
+        
+        @include tablets {
+            display: none;
+        }
+        
+        &--footer {
+        
+            @include mobiles {
+                display: block;
+            }
+        }
+    }
+
+    &__number {
+        white-space: nowrap;
+        
+        
+        &--header {
+        
+            @include tablets {
+            display: none;
+        }
+    }
+        &--footer {
+            
+            @include tablets {
+                color: $red;
+            }
+
+
+            @include mobiles {
+                color: $black;
+            }
+        }
+    }
 }

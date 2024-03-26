@@ -1,6 +1,19 @@
-.menu__list {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-family: 'Alegreya Sans';
+.menu {
+    @include tablets {
+        display: none;
+    }
+
+    &__link {
+        white-space: nowrap;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        margin: 0 30px;
+        font-family: 'Alegreya Sans';
+    }
 }

@@ -1,9 +1,8 @@
 .reviews {
-    padding: 65px 0;
+    padding: 4.0625rem 0;
     
     &__container {
-        padding: 42px;
-        //height: 100vh;
+        padding: 2.625rem;
     }
     
     &__title {
@@ -21,37 +20,63 @@
 
     &__wrapper {
         display: flex;
-        gap: 40px;
-        margin-bottom: 20px;
-        padding: 42px;
+        gap: 2.5rem;
+        margin-bottom: 1.25rem;
+        padding: 2.625rem;
         background-color: $grey-medium;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__right-wrapper {
         flex: 1;
-        padding-top: 35px;
-        padding-right: 40px;
+        padding-top: 2.1875rem;
+        padding-right: 2.5rem;
+
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     } 
 
     &__text {
         color: $light-grey;
-        margin-bottom: 38px;
+        margin-bottom: 2.375rem;
+
+        @include tablets {
+            text-align: center;
+        }
     }
 
     &__subtitle {
         color: $black;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
+
+        @include tablets {
+            text-align: center;
+        }
     }
 
     &__author {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 700;
     }
 
     &__img-block {
-        width: 253px;
-        height: 264px;
+        width: 15.8125rem;
+        height: 16.5rem;
+
+        @include tablets {
+            display: flex;
+            justify-content: center;
+            width: 8.125rem;
+            height: 8.125rem;
+        }
     }
 
     &__img {

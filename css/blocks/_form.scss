@@ -5,8 +5,8 @@
 
     &__row {
         display: flex;
-        gap: 20px;
-        margin-bottom: 15px;
+        gap: 1.25rem;
+        margin-bottom: 0.9375rem;
 
         &:last-child {
             margin-bottom: 0;
@@ -20,7 +20,8 @@
     &__input {
         width: 100%;
         border: 3px solid transparent;
-        padding: 16px 12px;
+        border-radius: 5px;
+        padding: 1rem 0.75rem;
 
         &--active,
         &:focus {
@@ -29,7 +30,7 @@
         }
 
         &--textarea {
-            height: 152px;
+            height: 9.5rem;
             resize: none;
         }
     }
@@ -37,7 +38,11 @@
     &__controls {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
+
+        @include mobiles {
+            justify-content: center;
+        }
     }
 
     &__btn-order {
@@ -50,5 +55,17 @@
         text-transform: capitalize;
         font-weight: 400;
         color: $white;
+
+        @include tablets {
+            color: $red;
+        }
+    }
+
+    &__buttons {
+        @include tablets {
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+        }
     }
 }

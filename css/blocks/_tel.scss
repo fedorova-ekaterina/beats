@@ -32,14 +32,18 @@
 
 
     &__icon {
-        flex-shrink: 0;
+        fill: $black;
         
         @include tablets {
             display: none;
         }
         
-        &--footer {
-        
+        &--red {
+            @include tablets {
+                display: block;
+                fill: $red;
+            }
+            
             @include mobiles {
                 display: block;
             }

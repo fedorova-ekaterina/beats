@@ -723,12 +723,16 @@ body {
     .tel::before {
       display: none; } }
   .tel__icon {
-    flex-shrink: 0; }
+    fill: #000; }
     @media screen and (max-width: 768px) {
       .tel__icon {
         display: none; } }
+    @media screen and (max-width: 768px) {
+      .tel__icon--red {
+        display: block;
+        fill: #e01f3d; } }
     @media screen and (max-width: 480px) {
-      .tel__icon--footer {
+      .tel__icon--red {
         display: block; } }
   .tel__number {
     white-space: nowrap; }

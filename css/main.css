@@ -716,9 +716,6 @@ body {
   gap: 0.3125rem;
   align-items: center;
   position: relative; }
-  @media screen and (max-width: 768px) {
-    .tel--footer {
-      padding-left: 8%; } }
   @media screen and (max-width: 480px) {
     .tel {
       justify-content: center;

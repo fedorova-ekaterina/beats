@@ -4,12 +4,6 @@
     align-items: center;
     position: relative;
 
-    @include tablets {
-        
-        &--footer {
-            padding-left: 8%;
-        }
-    }
 
     @include mobiles {
         justify-content: center;

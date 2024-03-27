@@ -705,6 +705,9 @@ body {
   width: 1.875rem;
   height: 1.875rem; }
 
+.share__img {
+  fill: #b3b3b3; }
+
 .tel {
   display: flex;
   gap: 0.3125rem;

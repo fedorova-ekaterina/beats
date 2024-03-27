@@ -709,12 +709,7 @@ body {
   position: relative; }
   @media screen and (max-width: 768px) {
     .tel--footer {
-      padding-left: 8%; }
-      .tel--footer::before {
-        content: url("../img/phone-red.png");
-        position: absolute;
-        top: 0;
-        left: 0; } }
+      padding-left: 8%; } }
   @media screen and (max-width: 480px) {
     .tel {
       justify-content: center;
@@ -733,7 +728,8 @@ body {
         fill: #e01f3d; } }
     @media screen and (max-width: 480px) {
       .tel__icon--red {
-        display: block; } }
+        display: block;
+        fill: #000; } }
   .tel__number {
     white-space: nowrap; }
     @media screen and (max-width: 768px) {

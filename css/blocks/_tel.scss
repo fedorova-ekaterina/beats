@@ -8,13 +8,6 @@
         
         &--footer {
             padding-left: 8%;
-            
-            &::before {
-                content: url("../img/phone-red.png");
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
         }
     }
 
@@ -46,6 +39,7 @@
             
             @include mobiles {
                 display: block;
+                fill: $black;
             }
         }
     }

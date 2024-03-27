@@ -29,8 +29,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     margin: 0 auto;
-    margin-bottom: 1.25rem;
+    //margin-bottom: 1.25rem;
     width: 8.125rem;
     height: 8.125rem;
     border-radius: 50%;
@@ -39,6 +40,4 @@
 
 .feature__img {
     fill: $black;
-    width: 4.25rem;
-    height: 4.25rem;
 }

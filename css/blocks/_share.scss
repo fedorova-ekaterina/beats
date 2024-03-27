@@ -13,4 +13,8 @@
 
 .share__img {
     fill: $grey-social;
+
+    &:hover {
+        fill: $black;
+    }
 }

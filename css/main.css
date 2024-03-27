@@ -268,6 +268,7 @@ body {
   background-color: #f5f5f5; }
 
 .feature__img {
+  fill: #000;
   width: 4.25rem;
   height: 4.25rem; }
 
@@ -707,6 +708,8 @@ body {
 
 .share__img {
   fill: #b3b3b3; }
+  .share__img:hover {
+    fill: #000; }
 
 .tel {
   display: flex;
